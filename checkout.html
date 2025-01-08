@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Computer Components Store</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Checkout</h1>
+            <a href="/" class="back-button">← Back to Store</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <h2>Order Summary</h2>
+            <div id="checkout-items"></div>
+            <div class="checkout-summary">
+                <div class="total-section">
+                    <h3>Total Amount: $<span id="checkout-total">0</span></h3>
+                    
+                </div>
+                <button id="place-order" class="checkout-button">Place Order</button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/checkout.js"></script>
+</body>
+</html>
