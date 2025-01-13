@@ -19,11 +19,20 @@
             <h2>Order Summary</h2>
             <div id="checkout-items"></div>
             <div class="checkout-summary">
+
+                
+                <div class="promo-code-section">
+                    <label for="promo-code">Promo Code:</label>
+                    <input type="text" id="promo-code" placeholder="Enter promo code" />
+                    <button id="apply-promo" class="promo-button">Apply</button>
+                </div>
+                
                 <div class="total-section">
                     <h3>Total Amount: $<span id="checkout-total">0</span></h3>
                     
                 </div>
                 <button id="place-order" class="checkout-button">Place Order</button>
+                
             </div>
         </div>
     </main>
