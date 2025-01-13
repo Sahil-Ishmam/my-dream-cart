@@ -65,28 +65,6 @@ function showMessage(message, isError = false) {
 
 // code for promo code 
 
-function updateTotalDisplay() {
-    const summarySection = document.querySelector('.total-section');
-    let discountAmount = 0;
-    let finalTotal = subtotal;
-
-    if (appliedPromoCode) {
-        discountAmount = subtotal * PROMO_CODES[appliedPromoCode];
-        finalTotal = subtotal - discountAmount;
-    }
-
-    summarySection.innerHTML = `
-        <h3>Order Summary</h3>
-        <p>Subtotal: $${subtotal.toFixed(2)}</p>
-        ${appliedPromoCode ? `
-            <p>Discount (${appliedPromoCode}): -$${discountAmount.toFixed(2)}</p>
-        ` : ''}
-        <p class="final-total">Final Total: $${finalTotal.toFixed(2)}</p>
-    `;
-}
-
-
-
 // code for promo code 
 applyPromoBtn.addEventListener('click', () => {
     const promoCode = promoCodeInput.value.trim().toLowerCase();
